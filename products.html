@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="preload">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | SecureX Security Solutions</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <meta name="description" content="Browse SecureX security products including IP cameras, smart locks, alarm systems and video doorbells.">
+  <script>
+    (function(){
+      try {
+        var theme = localStorage.getItem('securex_theme');
+        if (!theme) {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        if (theme === 'dark') document.documentElement.classList.add('dark');
+      } catch(e) {}
+        try {
+          var securexPrefs = JSON.parse(localStorage.getItem('securex_preferences') || '{}');
+          document.documentElement.setAttribute('dir', securexPrefs.rtl === 'rtl' ? 'rtl' : 'ltr');
+        } catch (e) {}
+      document.documentElement.classList.remove('preload');
+    })();
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Segoe UI', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=3">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300 overflow-x-hidden">
+
+  <!-- Page Hero -->
+  <section class="relative bg-navy-900 bg-cover bg-center security-pattern overflow-hidden" style="background-image:url('assets/images/products hero bg.jpg')">
+    <div class="hero-gradient absolute inset-0"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
+      <span class="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-3 inline-block">Our Products</span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white mb-4">Security Products</h1>
+      <p class="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">Browse our range of professional security cameras, smart locks, alarms and doorbells.</p>
+    </div>
+  </section>
+
+  <!-- Products Section -->
+  <section class="py-12 bg-slate-50 dark:bg-slate-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Search & Filters -->
+      <div class="mb-8">
+        <div class="relative max-w-md mx-auto mb-6">
+          <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none">
+            <i data-lucide="search" class="w-5 h-5 text-slate-400"></i>
+          </div>
+          <input
+            type="text"
+            id="product-search"
+            placeholder="Search products..."
+            class="w-full pl-12 pr-4 py-3 bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-xl text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all"
+          >
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-2">
+          <button data-filter="all" class="px-5 py-2.5 bg-blue-600 text-white text-sm font-semibold rounded-xl shadow-lg shadow-blue-600/25 transition-all duration-200">
+            All Products
+          </button>
+          <button data-filter="ip-cameras" class="px-5 py-2.5 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 text-sm font-semibold rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200">
+            IP Cameras
+          </button>
+          <button data-filter="smart-locks" class="px-5 py-2.5 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 text-sm font-semibold rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200">
+            Smart Locks
+          </button>
+          <button data-filter="alarm-systems" class="px-5 py-2.5 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 text-sm font-semibold rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200">
+            Alarm Systems
+          </button>
+          <button data-filter="video-doorbells" class="px-5 py-2.5 bg-white dark:bg-slate-900 text-slate-600 dark:text-slate-300 text-sm font-semibold rounded-xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 transition-all duration-200">
+            Video Doorbells
+          </button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"></div>
+
+      <!-- No results -->
+      <div id="no-products" class="hidden text-center py-20">
+        <div class="inline-flex w-20 h-20 bg-slate-200 dark:bg-slate-800 rounded-full items-center justify-center mb-4">
+          <i data-lucide="search-x" class="w-9 h-9 text-slate-400"></i>
+        </div>
+        <h3 class="text-xl font-bold text-slate-900 dark:text-white mb-2">No products found</h3>
+        <p class="text-slate-500 dark:text-slate-400">Try adjusting your search or selecting a different category.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-8 sm:p-12 text-center overflow-hidden">
+        <div class="absolute -top-20 -right-20 w-80 h-80 bg-white/5 rounded-full"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-white/5 rounded-full"></div>
+        <div class="relative">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-3">Not Sure Which Product is Right?</h2>
+          <p class="text-blue-100 mb-6 max-w-xl mx-auto">Book a free site survey and our experts will recommend the perfect security solution for your property.</p>
+          <a href="contact.html#survey-form" class="inline-flex items-center space-x-2 px-6 py-3.5 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors">
+            <i data-lucide="calendar-check" class="w-5 h-5"></i>
+            <span>Book Free Survey</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js?v=5"></script>
+  <script src="js/nav.js?v=9"></script>
+  <script src="js/footer.js?v=4"></script>
+  <script src="js/products.js?v=5"></script>
+</body>
+</html>

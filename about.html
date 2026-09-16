@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en" class="preload">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us | SecureX Security Solutions</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <meta name="description" content="Learn about SecureX - our mission, experienced team, and commitment to protecting homes and businesses with professional security solutions.">
+  <script>
+    (function(){
+      try {
+        var theme = localStorage.getItem('securex_theme');
+        if (!theme) {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        if (theme === 'dark') document.documentElement.classList.add('dark');
+      } catch(e) {}
+      try {
+        var securexPrefs = JSON.parse(localStorage.getItem('securex_preferences') || '{}');
+        document.documentElement.setAttribute('dir', securexPrefs.rtl === 'rtl' ? 'rtl' : 'ltr');
+      } catch (e) {}
+      document.documentElement.classList.remove('preload');
+    })();
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Segoe UI', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=3">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300 overflow-x-hidden">
+
+  <!-- Page Hero -->
+  <section class="relative bg-navy-900 bg-cover bg-center security-pattern overflow-hidden" style="background-image:url('assets/images/about hero bg.jpg')">
+    <div class="hero-gradient absolute inset-0"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
+      <span class="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-3 inline-block">About SecureX</span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white mb-4">Your Trusted Security Partner</h1>
+      <p class="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">For over 15 years, we have protected homes and businesses with professional security expertise, reliable products and outstanding support.</p>
+    </div>
+  </section>
+
+  <!-- Story Section -->
+  <section class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="scroll-reveal">
+          <div class="relative">
+            <div class="absolute -top-6 -left-6 w-64 h-64 bg-blue-500/10 rounded-full blur-2xl"></div>
+            <div class="relative bg-slate-100 dark:bg-slate-800 rounded-2xl overflow-hidden shadow-2xl">
+              <div class="h-80 relative overflow-hidden bg-slate-100 dark:bg-slate-800">
+                <img src="assets/images/Our Story.jpg" alt="Our Story" class="w-full h-full object-cover">
+              </div>
+              <div class="p-6">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="font-bold text-slate-900 dark:text-white">Our Story</h3>
+                  <span class="text-xs bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-semibold px-3 py-1 rounded-full">Est. 2011</span>
+                </div>
+                <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">What began as a two-person CCTV installation team is now a leading home and business security provider with 50+ expert technicians.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="scroll-reveal">
+          <span class="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Who We Are</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2 mb-5">Protecting What Matters Most</h2>
+          <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+            SecureX is a professional security installation company dedicated to safeguarding families, employees and businesses. We combine trusted products with skilled installation and ongoing support.
+          </p>
+          <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-8">
+            Our mission is simple: to deliver security solutions that are effective, reliable and easy to use — backed by a team that genuinely cares about your safety.
+          </p>
+          <div class="grid grid-cols-2 gap-4">
+            <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-4 text-center card-hover">
+              <p class="text-3xl font-extrabold text-blue-600 dark:text-blue-400" data-count="15" data-suffix="+">0+</p>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Years Experience</p>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-4 text-center card-hover">
+              <p class="text-3xl font-extrabold text-blue-600 dark:text-blue-400" data-count="50" data-suffix="+">0+</p>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Expert Technicians</p>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-4 text-center card-hover">
+              <p class="text-3xl font-extrabold text-blue-600 dark:text-blue-400" data-count="10000" data-suffix="+">0+</p>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Happy Clients</p>
+            </div>
+            <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-4 text-center card-hover">
+              <p class="text-3xl font-extrabold text-blue-600 dark:text-blue-400" data-count="15000" data-suffix="+">0+</p>
+              <p class="text-sm text-slate-500 dark:text-slate-400 mt-1">Systems Installed</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Journey -->
+  <section class="py-20 bg-slate-50 dark:bg-slate-800/50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 scroll-reveal">
+        <span class="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Our Journey</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">Milestones That Shaped Us</h2>
+        <p class="text-slate-600 dark:text-slate-300 mt-4 max-w-2xl mx-auto">From a two-person team to one of the region's most trusted security providers.</p>
+      </div>
+
+      <ol class="space-y-8">
+        <li class="timeline-line flex gap-6 scroll-reveal">
+          <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-600/25 z-10">
+            <i data-lucide="rocket" class="w-5 h-5 text-white"></i>
+          </div>
+          <div class="flex-1 bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm card-hover">
+            <span class="inline-block text-xs bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-semibold px-3 py-1 rounded-full mb-3">2011</span>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">The Humble Beginning</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400">SecureX is founded by two certified technicians with a single van and a passion for protecting local homes.</p>
+          </div>
+        </li>
+        <li class="timeline-line flex gap-6 scroll-reveal">
+          <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-600/25 z-10">
+            <i data-lucide="building-2" class="w-5 h-5 text-white"></i>
+          </div>
+          <div class="flex-1 bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm card-hover">
+            <span class="inline-block text-xs bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-semibold px-3 py-1 rounded-full mb-3">2015</span>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Going Commercial</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400">We expand into offices, shops and warehouses — delivering multi-site CCTV and access control solutions.</p>
+          </div>
+        </li>
+        <li class="timeline-line flex gap-6 scroll-reveal">
+          <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-600/25 z-10">
+            <i data-lucide="smartphone" class="w-5 h-5 text-white"></i>
+          </div>
+          <div class="flex-1 bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm card-hover">
+            <span class="inline-block text-xs bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-semibold px-3 py-1 rounded-full mb-3">2018</span>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">Going Smart</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400">We pioneer smart home integrations — app-controlled locks, video doorbells and AI-powered cameras.</p>
+          </div>
+        </li>
+        <li class="timeline-line flex gap-6 scroll-reveal">
+          <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-600/25 z-10">
+            <i data-lucide="radio" class="w-5 h-5 text-white"></i>
+          </div>
+          <div class="flex-1 bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm card-hover">
+            <span class="inline-block text-xs bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-semibold px-3 py-1 rounded-full mb-3">2021</span>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">24/7 Monitoring Launches</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400">Our own round-the-clock monitoring centre opens, bringing instant alerts and rapid response to every client.</p>
+          </div>
+        </li>
+        <li class="timeline-line flex gap-6 scroll-reveal">
+          <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center flex-shrink-0 shadow-lg shadow-blue-600/25 z-10">
+            <i data-lucide="users" class="w-5 h-5 text-white"></i>
+          </div>
+          <div class="flex-1 bg-white dark:bg-slate-900 rounded-2xl p-6 shadow-sm card-hover">
+            <span class="inline-block text-xs bg-blue-100 dark:bg-blue-900/40 text-blue-600 dark:text-blue-400 font-semibold px-3 py-1 rounded-full mb-3">Today</span>
+            <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-1">A Team You Can Trust</h3>
+            <p class="text-sm text-slate-500 dark:text-slate-400">50+ expert technicians and 15,000+ systems installed — protecting what matters across 120+ cities.</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- Mission & Values -->
+  <section class="py-20 bg-slate-50 dark:bg-slate-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 scroll-reveal">
+        <span class="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Our Values</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">What Drives Us</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 card-hover">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="heart" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Customer First</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Every decision starts with what's best for our clients. We listen, advise honestly and never oversell.</p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 card-hover">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="shield" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Trust & Integrity</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">We operate with full transparency in pricing, products and advice — building lasting relationships.</p>
+        </div>
+        <div class="bg-white dark:bg-slate-900 rounded-2xl p-6 card-hover">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="award" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Quality & Expertise</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Certified technicians and only top-tier tested products — installed to professional standards.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 scroll-reveal">
+        <span class="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Meet the Team</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">Our Experienced Leadership</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 stagger-children">
+        <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 text-center card-hover">
+          <div class="w-20 h-20 mx-auto rounded-full overflow-hidden ring-2 ring-blue-500 mb-4 bg-slate-100 dark:bg-slate-800">
+            <img src="https://randomuser.me/api/portraits/men/14.jpg" alt="Alex Harris" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white">Alex Harris</h3>
+          <p class="text-sm text-blue-600 dark:text-blue-400 font-medium mb-3">Founder & CEO</p>
+          <p class="text-sm text-slate-500 dark:text-slate-400">15+ years in the security industry leading our vision and strategy.</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 text-center card-hover">
+          <div class="w-20 h-20 mx-auto rounded-full overflow-hidden ring-2 ring-emerald-500 mb-4 bg-slate-100 dark:bg-slate-800">
+            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Rebecca Nguyen" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white">Rebecca Nguyen</h3>
+          <p class="text-sm text-blue-600 dark:text-blue-400 font-medium mb-3">Head of Operations</p>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Ensures every installation runs smoothly, on time and on budget.</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 text-center card-hover">
+          <div class="w-20 h-20 mx-auto rounded-full overflow-hidden ring-2 ring-amber-500 mb-4 bg-slate-100 dark:bg-slate-800">
+            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Marcus Kim" class="w-full h-full object-cover">
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white">Marcus Kim</h3>
+          <p class="text-sm text-blue-600 dark:text-blue-400 font-medium mb-3">Lead Technician</p>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Certified installer with deep expertise in complex security systems.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-8 sm:p-12 text-center overflow-hidden scroll-reveal">
+        <div class="absolute -top-20 -right-20 w-80 h-80 bg-white/5 rounded-full"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-white/5 rounded-full"></div>
+        <div class="relative">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-3">Join Thousands of Protected Clients</h2>
+          <p class="text-blue-100 mb-6 max-w-xl mx-auto">Experience the SecureX difference. Book a free site survey today.</p>
+          <a href="contact.html#survey-form" class="inline-flex items-center space-x-2 px-6 py-3.5 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors">
+            <i data-lucide="calendar-check" class="w-5 h-5"></i>
+            <span>Book Free Survey</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js?v=5"></script>
+  <script src="js/nav.js?v=9"></script>
+  <script src="js/footer.js?v=4"></script>
+</body>
+</html>

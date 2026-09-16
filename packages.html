@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en" class="preload">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Packages | SecureX Security Plans</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <meta name="description" content="Choose the right security package from SecureX - Home Basic, Home Premium, and Office Security plans with professional installation and monitoring.">
+  <script>
+    (function(){
+      try {
+        var theme = localStorage.getItem('securex_theme');
+        if (!theme) {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        if (theme === 'dark') document.documentElement.classList.add('dark');
+      } catch(e) {}
+        try {
+          var securexPrefs = JSON.parse(localStorage.getItem('securex_preferences') || '{}');
+          document.documentElement.setAttribute('dir', securexPrefs.rtl === 'rtl' ? 'rtl' : 'ltr');
+        } catch (e) {}
+      document.documentElement.classList.remove('preload');
+    })();
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Segoe UI', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=3">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300 overflow-x-hidden">
+
+  <!-- Page Hero -->
+  <section class="relative bg-navy-900 bg-cover bg-center security-pattern overflow-hidden" style="background-image:url('assets/images/Packages hero bg.jpg')">
+    <div class="hero-gradient absolute inset-0"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
+      <span class="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-3 inline-block">Security Packages</span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white mb-4">Choose Your Protection Plan</h1>
+      <p class="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">Complete security packages with professional installation, high-quality products and ongoing support.</p>
+    </div>
+  </section>
+
+  <!-- Packages Section -->
+  <section class="py-16 bg-slate-50 dark:bg-slate-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Selected Package Display -->
+      <div id="selected-package-bar" class="hidden mb-8 bg-white dark:bg-slate-900 border-2 border-blue-500 rounded-2xl p-5 flex items-center justify-between flex-wrap gap-4">
+        <div class="flex items-center space-x-3">
+          <div class="w-11 h-11 bg-blue-600 rounded-xl flex items-center justify-center">
+            <i data-lucide="package-check" class="w-5 h-5 text-white"></i>
+          </div>
+          <div>
+            <p class="font-bold text-slate-900 dark:text-white" id="selected-package-name">Home Basic</p>
+            <p class="text-sm text-slate-500 dark:text-slate-400" id="selected-package-price">$499.00</p>
+          </div>
+        </div>
+        <div class="flex items-center space-x-3">
+          <p class="text-sm text-slate-500 dark:text-slate-400 hidden sm:block">Ready to proceed?</p>
+          <a href="contact.html#survey-form" class="px-5 py-2.5 bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-xl transition-colors">
+            Proceed to Propose
+          </a>
+        </div>
+      </div>
+
+      <div id="packages-grid" class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+        <!-- Home Basic -->
+        <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg shadow-slate-200/50 dark:shadow-slate-950 overflow-hidden card-hover flex flex-col" data-package="home-basic">
+          <div class="bg-slate-800 dark:bg-slate-800 p-6 text-white">
+            <div class="flex items-center justify-between mb-3">
+              <div class="w-11 h-11 bg-white/10 rounded-xl flex items-center justify-center">
+                <i data-lucide="home" class="w-5 h-5"></i>
+              </div>
+              <span class="text-xs bg-white/20 text-white font-semibold px-3 py-1 rounded-full">Essential</span>
+            </div>
+            <h2 class="text-xl font-bold mb-1">Home Basic</h2>
+            <p class="text-sm text-slate-300">Essential protection for apartments and starter homes.</p>
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="mb-5">
+              <span class="text-xs text-slate-400">Starting from</span>
+              <div class="flex items-end space-x-1">
+                <span class="text-4xl font-extrabold text-slate-900 dark:text-white">$499</span>
+                <span class="text-sm text-slate-400 mb-1.5">/ install</span>
+              </div>
+            </div>
+            <div class="mb-5">
+              <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Includes</p>
+              <ul class="space-y-2.5">
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>4x HD CCTV cameras</span>
+                </li>
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>1TB NVR recorder included</span>
+                </li>
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>Professional installation</span>
+                </li>
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>Mobile monitoring app</span>
+                </li>
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>1-year warranty</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mb-5 pt-4 border-t border-slate-200 dark:border-slate-700">
+              <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Ideal For</p>
+              <p class="text-sm text-slate-500 dark:text-slate-400">Small apartments and homes needing core video surveillance.</p>
+            </div>
+            <button data-enquire-package="Home Basic" class="mt-auto w-full px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors">
+              Enquire Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Home Premium (Featured) -->
+        <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-2xl shadow-blue-600/10 dark:shadow-blue-900/20 border-2 border-blue-500 overflow-hidden card-hover flex flex-col relative" data-package="home-premium">
+          <div class="absolute top-0 left-0 right-0 bg-blue-600 text-white text-center text-xs font-bold py-2 tracking-wider">MOST POPULAR</div>
+          <div class="bg-gradient-to-r from-blue-600 to-blue-800 p-6 pt-8 text-white">
+            <div class="flex items-center justify-between mb-3">
+              <div class="w-11 h-11 bg-white/20 rounded-xl flex items-center justify-center">
+                <i data-lucide="shield" class="w-5 h-5"></i>
+              </div>
+              <span class="text-xs bg-white/20 text-white font-semibold px-3 py-1 rounded-full">Recommended</span>
+            </div>
+            <h2 class="text-xl font-bold mb-1">Home Premium</h2>
+            <p class="text-sm text-blue-100">Comprehensive smart home security for larger properties.</p>
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="mb-5">
+              <span class="text-xs text-slate-400">Starting from</span>
+              <div class="flex items-end space-x-1">
+                <span class="text-4xl font-extrabold text-blue-600 dark:text-blue-400">$899</span>
+                <span class="text-sm text-slate-400 mb-1.5">/ install</span>
+              </div>
+            </div>
+            <div class="mb-5">
+              <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Includes</p>
+              <ul class="space-y-2.5">
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>6x 4K smart cameras</span>
+                </li>
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>Smart video doorbell</span>
+                </li>
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>Full alarm system</span>
+                </li>
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>Professional installation</span>
+                </li>
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>Mobile monitoring app</span>
+                </li>
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>5-year warranty</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mb-5 pt-4 border-t border-slate-200 dark:border-slate-700">
+              <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Ideal For</p>
+              <p class="text-sm text-slate-500 dark:text-slate-400">Homes and villas needing full smart protection coverage.</p>
+            </div>
+            <button data-enquire-package="Home Premium" class="mt-auto w-full px-5 py-3 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors">
+              Enquire Now
+            </button>
+          </div>
+        </div>
+
+        <!-- Office Security -->
+        <div class="bg-white dark:bg-slate-900 rounded-2xl shadow-lg shadow-slate-200/50 dark:shadow-slate-950 overflow-hidden card-hover flex flex-col" data-package="office">
+          <div class="bg-slate-700 dark:bg-slate-800 p-6 text-white">
+            <div class="flex items-center justify-between mb-3">
+              <div class="w-11 h-11 bg-white/10 rounded-xl flex items-center justify-center">
+                <i data-lucide="building-2" class="w-5 h-5"></i>
+              </div>
+              <span class="text-xs bg-white/20 text-white font-semibold px-3 py-1 rounded-full">Business</span>
+            </div>
+            <h2 class="text-xl font-bold mb-1">Office Security</h2>
+            <p class="text-sm text-slate-300">Complete protection for offices and small businesses.</p>
+          </div>
+          <div class="p-6 flex-1 flex flex-col">
+            <div class="mb-5">
+              <span class="text-xs text-slate-400">Starting from</span>
+              <div class="flex items-end space-x-1">
+                <span class="text-4xl font-extrabold text-slate-900 dark:text-white">$1,499</span>
+                <span class="text-sm text-slate-400 mb-1.5">/ install</span>
+              </div>
+            </div>
+            <div class="mb-5">
+              <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Includes</p>
+              <ul class="space-y-2.5">
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>8x 4K business cameras</span>
+                </li>
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>Access/security system</span>
+                </li>
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>Employee role management</span>
+                </li>
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>Professional installation</span>
+                </li>
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>Dedicated support</span>
+                </li>
+                <li class="flex items-start space-x-2.5 text-sm text-slate-600 dark:text-slate-300">
+                  <i data-lucide="check" class="w-4 h-4 text-emerald-500 mt-0.5 flex-shrink-0"></i>
+                  <span>3-year on-site warranty</span>
+                </li>
+              </ul>
+            </div>
+            <div class="mb-5 pt-4 border-t border-slate-200 dark:border-slate-700">
+              <p class="text-xs font-semibold text-slate-500 dark:text-slate-400 uppercase tracking-wider mb-2">Ideal For</p>
+              <p class="text-sm text-slate-500 dark:text-slate-400">Offices, shops and commercial premises needing robust security.</p>
+            </div>
+            <button data-enquire-package="Office Security" class="mt-auto w-full px-5 py-3 bg-slate-700 dark:bg-slate-700 hover:bg-slate-800 text-white font-semibold rounded-xl transition-colors">
+              Enquire Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What's Included -->
+  <section class="py-16 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 scroll-reveal">
+        <span class="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Every Package Includes</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">What You Get With SecureX</h2>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
+        <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 text-center card-hover">
+          <div class="w-14 h-14 mx-auto bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-4">
+            <i data-lucide="shield-check" class="w-7 h-7 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Professional Installation</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Certified technicians handle everything from start to finish.</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 text-center card-hover">
+          <div class="w-14 h-14 mx-auto bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-4">
+            <i data-lucide="smartphone" class="w-7 h-7 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Mobile Monitoring</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Watch your property live from anywhere, anytime.</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 text-center card-hover">
+          <div class="w-14 h-14 mx-auto bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-4">
+            <i data-lucide="headphones" class="w-7 h-7 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Ongoing Support</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Dedicated support team available whenever you need help.</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 text-center card-hover">
+          <div class="w-14 h-14 mx-auto bg-blue-100 dark:bg-blue-900/30 rounded-2xl flex items-center justify-center mb-4">
+            <i data-lucide="award" class="w-7 h-7 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Extended Warranty</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Long-term coverage on all equipment for peace of mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-slate-50 dark:bg-slate-800/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-8 sm:p-12 text-center overflow-hidden scroll-reveal">
+        <div class="absolute -top-20 -right-20 w-80 h-80 bg-white/5 rounded-full"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-white/5 rounded-full"></div>
+        <div class="relative">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-3">Custom Solutions Available</h2>
+          <p class="text-blue-100 mb-6 max-w-xl mx-auto">Need something different? Our experts can create a custom package tailored to your specific security needs.</p>
+          <a href="contact.html#survey-form" class="inline-flex items-center space-x-2 px-6 py-3.5 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors">
+            <i data-lucide="calendar-check" class="w-5 h-5"></i>
+            <span>Book Free Survey</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js?v=5"></script>
+  <script src="js/nav.js?v=9"></script>
+  <script src="js/footer.js?v=4"></script>
+  <script>
+    function initPackages() {
+      document.querySelectorAll('[data-enquire-package]').forEach(btn => {
+        btn.addEventListener('click', () => {
+          const name = btn.getAttribute('data-enquire-package');
+          const card = btn.closest('[data-package]');
+          if (card) {
+            card.classList.add('ring-2', 'ring-blue-500');
+            document.querySelectorAll('[data-package]').forEach(c => {
+              if (c !== card) c.classList.remove('ring-2', 'ring-blue-500');
+            });
+          }
+          const bar = document.getElementById('selected-package-bar');
+          const pName = document.getElementById('selected-package-name');
+          pName.textContent = name;
+          const prices = { 'Home Basic': '$499.00', 'Home Premium': '$899.00', 'Office Security': '$1,499.00' };
+          document.getElementById('selected-package-price').textContent = prices[name] || 'Custom';
+          bar.classList.remove('hidden');
+          bar.scrollIntoView({ behavior: 'smooth', block: 'center' });
+          setPreference('selected_package', name);
+          showToast(name + ' package selected', 'info');
+        });
+      });
+    }
+    document.addEventListener('DOMContentLoaded', initPackages);
+  </script>
+</body>
+</html>

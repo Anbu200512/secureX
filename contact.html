@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en" class="preload">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | SecureX</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <meta name="description" content="Contact SecureX for free site surveys and security solutions. Call us, email us, or book your free site survey online.">
+  <script>
+    (function(){
+      try {
+        var theme = localStorage.getItem('securex_theme');
+        if (!theme) {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        if (theme === 'dark') document.documentElement.classList.add('dark');
+      } catch(e) {}
+        try {
+          var securexPrefs = JSON.parse(localStorage.getItem('securex_preferences') || '{}');
+          document.documentElement.setAttribute('dir', securexPrefs.rtl === 'rtl' ? 'rtl' : 'ltr');
+        } catch (e) {}
+      document.documentElement.classList.remove('preload');
+    })();
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Segoe UI', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=3">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300 overflow-x-hidden">
+
+  <!-- Page Hero -->
+  <section class="relative bg-navy-900 bg-cover bg-center security-pattern overflow-hidden" style="background-image:url('assets/images/contact hero bg.jpg')">
+    <div class="hero-gradient absolute inset-0"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
+      <span class="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-3 inline-block">Contact Us</span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white mb-4">Get in Touch</h1>
+      <p class="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">Reach our security team for expert advice, free site surveys and product enquiries.</p>
+    </div>
+  </section>
+
+  <!-- Contact Info Cards -->
+  <section class="py-12 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
+        <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 text-center card-hover">
+          <div class="w-12 h-12 mx-auto bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="map-pin" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Visit Us</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">123 Security Avenue<br>Tech District, NY 10001</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 text-center card-hover">
+          <div class="w-12 h-12 mx-auto bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="phone" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Call Us</h3>
+          <a href="tel:+18005551234" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">+1 (800) 555-1234</a>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 text-center card-hover">
+          <div class="w-12 h-12 mx-auto bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="mail" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Email Us</h3>
+          <a href="mailto:info@securex.com" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">info@securex.com</a>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-6 text-center card-hover">
+          <div class="w-12 h-12 mx-auto bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="clock" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">Opening Hours</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Mon - Sat: 8 AM - 8 PM<br>Sun: 10 AM - 4 PM</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact & Survey Form Section -->
+  <section class="py-16 bg-slate-50 dark:bg-slate-800/50" id="survey-form">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <!-- Survey Form -->
+        <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl p-6 sm:p-8 scroll-reveal">
+          <div class="mb-8">
+            <div class="inline-flex items-center space-x-2 bg-blue-50 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400 px-4 py-1.5 rounded-full mb-4">
+              <i data-lucide="calendar-check" class="w-4 h-4"></i>
+              <span class="text-xs font-semibold">FREE SITE SURVEY</span>
+            </div>
+            <h2 class="text-2xl sm:text-3xl font-extrabold text-slate-900 dark:text-white mb-2">Book Your Free Site Survey</h2>
+            <p class="text-slate-500 dark:text-slate-400 text-sm">Fill in your details and our team will contact you to confirm your appointment.</p>
+          </div>
+
+          <form id="survey-form" class="space-y-5" novalidate>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="survey-name" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">Full Name *</label>
+                <input type="text" id="survey-name" placeholder="John Smith" class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all">
+                <p id="survey-name-error" class="form-error hidden text-red-500 text-xs mt-1"></p>
+              </div>
+              <div>
+                <label for="survey-phone" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">Phone Number *</label>
+                <input type="tel" id="survey-phone" placeholder="+1 (555) 000-0000" class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all">
+                <p id="survey-phone-error" class="form-error hidden text-red-500 text-xs mt-1"></p>
+              </div>
+            </div>
+
+            <div>
+              <label for="survey-email" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">Email Address *</label>
+              <input type="email" id="survey-email" placeholder="john@example.com" class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all">
+              <p id="survey-email-error" class="form-error hidden text-red-500 text-xs mt-1"></p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+              <div>
+                <label for="survey-property-type" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">Property Type *</label>
+                <select id="survey-property-type" class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all text-slate-700 dark:text-slate-300">
+                  <option value="">Select property type</option>
+                  <option value="Home">Home</option>
+                  <option value="Office">Office</option>
+                  <option value="Shop">Shop</option>
+                  <option value="Villa">Villa</option>
+                  <option value="Apartment">Apartment</option>
+                </select>
+                <p id="survey-property-type-error" class="form-error hidden text-red-500 text-xs mt-1"></p>
+              </div>
+              <div>
+                <label for="survey-date" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">Preferred Date *</label>
+                <input type="date" id="survey-date" class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all text-slate-700 dark:text-slate-300 dark:[color-scheme:dark]">
+                <p id="survey-date-error" class="form-error hidden text-red-500 text-xs mt-1"></p>
+              </div>
+            </div>
+
+            <div>
+              <label for="survey-time" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">Preferred Time *</label>
+              <select id="survey-time" class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all text-slate-700 dark:text-slate-300">
+                <option value="">Select time slot</option>
+                <option value="Morning (8AM - 12PM)">Morning (8AM - 12PM)</option>
+                <option value="Afternoon (12PM - 4PM)">Afternoon (12PM - 4PM)</option>
+                <option value="Evening (4PM - 8PM)">Evening (4PM - 8PM)</option>
+              </select>
+              <p id="survey-time-error" class="form-error hidden text-red-500 text-xs mt-1"></p>
+            </div>
+
+            <div>
+              <label for="survey-address" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">Property Address *</label>
+              <input type="text" id="survey-address" placeholder="123 Main Street, City, State, ZIP" class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all">
+              <p id="survey-address-error" class="form-error hidden text-red-500 text-xs mt-1"></p>
+            </div>
+
+            <div>
+              <label for="survey-requirement" class="block text-sm font-medium text-slate-700 dark:text-slate-300 mb-1.5">Security Requirement *</label>
+              <textarea id="survey-requirement" rows="4" placeholder="Describe what you need to protect (e.g. home entrance, office floor, back yard...)" class="w-full px-4 py-3 bg-white dark:bg-slate-800 border border-slate-200 dark:border-slate-700 rounded-xl text-sm placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-all resize-none"></textarea>
+              <p id="survey-requirement-error" class="form-error hidden text-red-500 text-xs mt-1"></p>
+            </div>
+
+            <button type="submit" class="w-full flex items-center justify-center space-x-2 px-6 py-4 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-all duration-200 shadow-lg shadow-blue-600/25 hover:shadow-blue-600/40 text-base">
+              <i data-lucide="calendar-check" class="w-5 h-5"></i>
+              <span>Book Free Survey</span>
+            </button>
+          </form>
+
+          <!-- Success Message -->
+          <div id="survey-success" class="hidden mt-6 bg-emerald-50 dark:bg-emerald-900/30 border border-emerald-200 dark:border-emerald-800 rounded-2xl p-6">
+            <div class="flex items-start space-x-3">
+              <div class="w-11 h-11 bg-emerald-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                <i data-lucide="check-circle" class="w-6 h-6 text-white"></i>
+              </div>
+              <div>
+                <h3 class="font-bold text-emerald-700 dark:text-emerald-400 mb-1">Request Submitted!</h3>
+                <p class="text-sm text-emerald-600 dark:text-emerald-300">Thank you for your enquiry. Our team will contact you within 24 hours to confirm your free site survey.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Info & Map Section -->
+        <div class="space-y-6">
+          <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl p-6 sm:p-8 scroll-reveal">
+            <h2 class="text-xl font-bold text-slate-900 dark:text-white mb-5">Contact Information</h2>
+            <div class="space-y-5">
+              <div class="flex items-start space-x-4">
+                <div class="w-11 h-11 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="map-pin" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-slate-900 dark:text-white text-sm mb-1">Store / Office Location</p>
+                  <p class="text-sm text-slate-500 dark:text-slate-400">123 Security Avenue, Tech District, New York, NY 10001</p>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="w-11 h-11 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="phone" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-slate-900 dark:text-white text-sm mb-1">Phone</p>
+                  <a href="tel:+18005551234" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">+1 (800) 555-1234</a>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="w-11 h-11 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="mail" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-slate-900 dark:text-white text-sm mb-1">Email</p>
+                  <a href="mailto:info@securex.com" class="text-sm text-blue-600 dark:text-blue-400 hover:underline">info@securex.com</a>
+                </div>
+              </div>
+              <div class="flex items-start space-x-4">
+                <div class="w-11 h-11 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center flex-shrink-0">
+                  <i data-lucide="clock" class="w-5 h-5 text-blue-600 dark:text-blue-400"></i>
+                </div>
+                <div>
+                  <p class="font-semibold text-slate-900 dark:text-white text-sm mb-1">Opening Hours</p>
+                  <div class="text-sm text-slate-500 dark:text-slate-400 space-y-1">
+                    <p class="flex justify-between gap-8"><span>Monday - Friday</span><span>8:00 AM - 8:00 PM</span></p>
+                    <p class="flex justify-between gap-8"><span>Saturday</span><span>9:00 AM - 6:00 PM</span></p>
+                    <p class="flex justify-between gap-8"><span>Sunday</span><span>10:00 AM - 4:00 PM</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+<!-- Map -->
+          <div class="bg-white dark:bg-slate-900 rounded-3xl shadow-xl overflow-hidden scroll-reveal">
+            <iframe
+              src="https://www.google.com/maps?q=123+Security+Avenue+New+York+NY+10001&output=embed"
+              class="w-full h-full min-h-[32rem]"
+              style="border:0; display:block;"
+              allowfullscreen
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="SecureX Headquarters Map"></iframe>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Mini Section -->
+  <section class="py-16 bg-white dark:bg-slate-900">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10 scroll-reveal">
+        <span class="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Quick Answers</span>
+        <h2 class="text-3xl font-extrabold text-slate-900 dark:text-white mt-2">Frequently Asked Questions</h2>
+      </div>
+      <div class="space-y-4 stagger-children">
+        <details class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-5 group cursor-pointer">
+          <summary class="flex items-center justify-between font-semibold text-slate-900 dark:text-white text-sm sm:text-base">
+            How long does a free site survey take?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-blue-600 dark:text-blue-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-sm text-slate-500 dark:text-slate-400 mt-3 leading-relaxed">Typically 30-45 minutes. Our expert assesses your property, discusses your needs and provides recommendations on the spot.</p>
+        </details>
+        <details class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-5 group cursor-pointer">
+          <summary class="flex items-center justify-between font-semibold text-slate-900 dark:text-white text-sm sm:text-base">
+            Is there any obligation to purchase after a survey?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-blue-600 dark:text-blue-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-sm text-slate-500 dark:text-slate-400 mt-3 leading-relaxed">No. The site survey is completely free with no obligation. You receive professional advice and only proceed if you're happy.</p>
+        </details>
+        <details class="bg-slate-50 dark:bg-slate-800/50 rounded-2xl p-5 group cursor-pointer">
+          <summary class="flex items-center justify-between font-semibold text-slate-900 dark:text-white text-sm sm:text-base">
+            Do you offer after-sales support?
+            <i data-lucide="chevron-down" class="w-5 h-5 text-blue-600 dark:text-blue-400 group-open:rotate-180 transition-transform"></i>
+          </summary>
+          <p class="text-sm text-slate-500 dark:text-slate-400 mt-3 leading-relaxed">Absolutely. Every installation includes ongoing support, maintenance checks, system updates and a dedicated help line.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-slate-50 dark:bg-slate-800/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-8 sm:p-12 text-center overflow-hidden scroll-reveal">
+        <div class="absolute -top-20 -right-20 w-80 h-80 bg-white/5 rounded-full"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-white/5 rounded-full"></div>
+        <div class="relative">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-3">Prefer to talk now?</h2>
+          <p class="text-blue-100 mb-6 max-w-xl mx-auto">Our security specialists are ready to answer your questions and help you choose the right solution.</p>
+          <a href="tel:+18005551234" class="inline-flex items-center space-x-2 px-6 py-3.5 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors">
+            <i data-lucide="phone" class="w-5 h-5"></i>
+            <span>Call +1 (800) 555-1234</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js?v=5"></script>
+  <script src="js/nav.js?v=9"></script>
+  <script src="js/footer.js?v=4"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

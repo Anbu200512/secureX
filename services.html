@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en" class="preload">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Services | SecureX Security Solutions</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/logo.svg">
+  <meta name="description" content="Explore SecureX security services: residential & commercial security, CCTV installation, access control, 24/7 monitoring and smart home integration.">
+  <script>
+    (function(){
+      try {
+        var theme = localStorage.getItem('securex_theme');
+        if (!theme) {
+          theme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+        }
+        if (theme === 'dark') document.documentElement.classList.add('dark');
+      } catch(e) {}
+        try {
+          var securexPrefs = JSON.parse(localStorage.getItem('securex_preferences') || '{}');
+          document.documentElement.setAttribute('dir', securexPrefs.rtl === 'rtl' ? 'rtl' : 'ltr');
+        } catch (e) {}
+      document.documentElement.classList.remove('preload');
+    })();
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Inter', 'Segoe UI', 'system-ui', '-apple-system', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css?v=3">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white dark:bg-slate-900 text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300 overflow-x-hidden">
+
+  <!-- Page Hero -->
+  <section class="relative bg-navy-900 security-pattern overflow-hidden">
+    <img src="assets/images/service hero bg.jpg" alt="Security services hero" class="absolute inset-0 w-full h-full object-cover">
+    <div class="hero-gradient absolute inset-0"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-20 text-center">
+      <span class="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-3 inline-block">Our Services</span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-white mb-4">Security Solutions That Work for You</h1>
+      <p class="text-slate-300 max-w-2xl mx-auto text-base sm:text-lg">From CCTV and alarms to access control and 24/7 monitoring — all delivered, installed and supported by our in-house team.</p>
+    </div>
+  </section>
+
+  <!-- Services Grid -->
+  <section class="pt-16 bg-white dark:bg-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-10 scroll-reveal">
+        <span class="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider">What We Do</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">Complete Security Services</h2>
+        <p class="text-slate-500 dark:text-slate-400 mt-3 max-w-2xl mx-auto">Every service is delivered by certified technicians, backed by warranty and ongoing support.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 stagger-children">
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 card-hover">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="home" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Residential Security</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Full home security design and installation — cameras, alarms and smart locks tailored to protect your family and property.</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 card-hover">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="building-2" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Commercial Security</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Scalable multi-site protection for offices, shops, warehouses and facilities — with centralised management and audit reporting.</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 card-hover">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="cctv" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">CCTV Installation</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">High-definition camera systems with professional placement, crisp day/night coverage and secure remote viewing on any device.</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 card-hover">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="key-round" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Access Control</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Smart locks, keypads and biometric entry for secure, keyless access with full activity logs and temporary codes for visitors.</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 card-hover">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="radio" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">24/7 Monitoring</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Round-the-clock alarm and camera monitoring in our own response centre, with instant alerts and rapid dispatch when it matters.</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 card-hover">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="bell-ring" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Alarm Systems</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Intruder alarms with sensors, sirens and cellular backup — installed discreetly and integrated with your cameras and app.</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 card-hover">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="smartphone" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Smart Home Integration</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Connect cameras, locks, lights and alarms into one app — with voice control and automation that works the way you live.</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 card-hover">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="wrench" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Maintenance &amp; Support</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Scheduled checks, firmware updates, camera cleaning and fast on-site repairs — keeping your system reliable year after year.</p>
+        </div>
+        <div class="bg-slate-50 dark:bg-slate-800 rounded-2xl p-6 card-hover">
+          <div class="w-12 h-12 bg-blue-100 dark:bg-blue-900/30 rounded-xl flex items-center justify-center mb-4">
+            <i data-lucide="headset" class="w-6 h-6 text-blue-600 dark:text-blue-400"></i>
+          </div>
+          <h3 class="text-lg font-bold text-slate-900 dark:text-white mb-2">Consultation &amp; Surveys</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400 leading-relaxed">Free on-site surveys and security audits — we assess your property and design the right protection, no obligation.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Monitoring Feature Splitting -->
+  <section class="py-20 bg-slate-50 dark:bg-slate-800/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div class="scroll-reveal">
+          <span class="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Around the Clock</span>
+          <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2 mb-5">A Monitoring Centre That Never Sleeps</h2>
+          <p class="text-slate-600 dark:text-slate-300 leading-relaxed mb-4">
+            When an alarm triggers or motion is detected, our team sees it within seconds. We verify the alert, reach out to you and dispatch help if needed — so you stay protected even when you're away.
+          </p>
+          <ul class="space-y-3 mb-8">
+            <li class="flex items-start space-x-3">
+              <div class="w-6 h-6 bg-blue-100 dark:bg-blue-900/30 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="check" class="w-4 h-4 text-blue-600 dark:text-blue-400"></i></div>
+              <p class="text-sm text-slate-600 dark:text-slate-300">Instant alarm verification with live camera feeds</p>
+            </li>
+            <li class="flex items-start space-x-3">
+              <div class="w-6 h-6 bg-blue-100 dark:bg-blue-900/30 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="check" class="w-4 h-4 text-blue-600 dark:text-blue-400"></i></div>
+              <p class="text-sm text-slate-600 dark:text-slate-300">Rapid response coordination with local security</p>
+            </li>
+            <li class="flex items-start space-x-3">
+              <div class="w-6 h-6 bg-blue-100 dark:bg-blue-900/30 rounded-md flex items-center justify-center flex-shrink-0 mt-0.5"><i data-lucide="check" class="w-4 h-4 text-blue-600 dark:text-blue-400"></i></div>
+              <p class="text-sm text-slate-600 dark:text-slate-300">Dedicated account manager and event reporting</p>
+            </li>
+          </ul>
+          <a href="packages.html" class="inline-flex items-center space-x-2 px-6 py-3.5 bg-blue-600 hover:bg-blue-700 text-white font-semibold rounded-xl transition-colors shadow-lg shadow-blue-600/25">
+            <i data-lucide="layers" class="w-5 h-5"></i>
+            <span>View Monitoring Packages</span>
+          </a>
+        </div>
+        <div class="scroll-reveal">
+          <div class="relative">
+            <div class="absolute -bottom-6 -right-6 w-72 h-72 bg-blue-500/10 rounded-full blur-2xl"></div>
+            <div class="relative bg-navy-900 rounded-2xl overflow-hidden shadow-2xl border border-slate-700/50">
+              <img src="assets/images/IP Cameras1.jpg" alt="Live activity alerts" class="w-full h-72 object-cover">
+              <div class="p-6 bg-slate-900/95">
+                <div class="flex items-center justify-between mb-3">
+                  <h3 class="font-bold text-white text-lg">Live Activity Feed</h3>
+                  <span class="inline-flex items-center space-x-1.5 text-xs bg-red-500 text-white font-semibold px-3 py-1 rounded-full">
+                    <span class="w-1.5 h-1.5 bg-white rounded-full animate-pulse"></span>
+                    <span>LIVE</span>
+                  </span>
+                </div>
+                <p class="text-sm text-slate-200 leading-relaxed">Motion detected at your front door — verified and alerted in seconds, whatever the hour.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How We Work -->
+  <section class="py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-12 scroll-reveal">
+        <span class="text-sm font-semibold text-blue-600 dark:text-blue-400 uppercase tracking-wider">Simple Process</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 dark:text-white mt-2">How Our Service Works</h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 stagger-children">
+        <div class="text-center p-6">
+          <div class="w-14 h-14 mx-auto bg-blue-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-blue-600/25">
+            <i data-lucide="calendar-check" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">1. Book a Survey</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Contact us for a free, no-obligation site visit at your convenience.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-14 h-14 mx-auto bg-blue-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-blue-600/25">
+            <i data-lucide="ruler" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">2. Custom Design</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">We design a tailored solution and provide a transparent quote with no hidden costs.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-14 h-14 mx-auto bg-blue-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-blue-600/25">
+            <i data-lucide="wrench" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">3. Expert Installation</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Certified technicians install and set up your system neatly and cleanly.</p>
+        </div>
+        <div class="text-center p-6">
+          <div class="w-14 h-14 mx-auto bg-blue-600 rounded-2xl flex items-center justify-center mb-4 shadow-lg shadow-blue-600/25">
+            <i data-lucide="headset" class="w-7 h-7 text-white"></i>
+          </div>
+          <h3 class="font-bold text-slate-900 dark:text-white mb-2">4. Ongoing Support</h3>
+          <p class="text-sm text-slate-500 dark:text-slate-400">Warranty, maintenance and friendly help whenever you need it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 bg-slate-50 dark:bg-slate-800/50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="relative bg-gradient-to-r from-blue-600 to-blue-800 rounded-3xl p-8 sm:p-12 text-center overflow-hidden scroll-reveal">
+        <div class="absolute -top-20 -right-20 w-80 h-80 bg-white/5 rounded-full"></div>
+        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-white/5 rounded-full"></div>
+        <div class="relative">
+          <h2 class="text-2xl sm:text-3xl font-extrabold text-white mb-3">Ready to Secure Your Property?</h2>
+          <p class="text-blue-100 mb-6 max-w-xl mx-auto">Book a free site survey today and get a tailored security plan built around your needs and budget.</p>
+          <div class="flex flex-wrap items-center justify-center gap-4">
+            <a href="contact.html#survey-form" class="inline-flex items-center space-x-2 px-6 py-3.5 bg-white text-blue-700 font-semibold rounded-xl hover:bg-blue-50 transition-colors">
+              <i data-lucide="calendar-check" class="w-5 h-5"></i>
+              <span>Book Free Survey</span>
+            </a>
+            <a href="products.html" class="inline-flex items-center space-x-2 px-6 py-3.5 bg-blue-500/20 border border-blue-300/40 text-white font-semibold rounded-xl hover:bg-blue-500/30 transition-colors">
+              <i data-lucide="package" class="w-5 h-5"></i>
+              <span>Browse Products</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="js/main.js?v=5"></script>
+  <script src="js/nav.js?v=9"></script>
+  <script src="js/footer.js?v=4"></script>
+</body>
+</html>
